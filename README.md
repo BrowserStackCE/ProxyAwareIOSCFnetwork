@@ -1,4 +1,5 @@
-# ProxyAwareIOSCFnetwork (Work in Progress)
+# ProxyAwareIOSCFnetwork 
+
 
 ## bs-xamarin-proxyaware-app (iOS)
 
