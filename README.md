@@ -41,7 +41,7 @@ public WebProxy GetProxySettings()
  ```
 The proxy is being read from a PAC file and then formatted via regular expression 
 
-## Example 
+## Steps 
 1. Clone the repo and build the app on Visual Studio.
 2. Enter http://ip-api.com/json your local browser. Note the IP mentioned in the "query" field.
 3. Start an AppLive session from https://app-live.browserstack.com/ and upload the .ipa
