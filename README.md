@@ -8,11 +8,10 @@
 What is a proxy-aware app?
 https://docstore.mik.ua/orelly/networking_2ndEd/fire/ch09_02.htm
 
-## Modules 
-
-ViewController : https://github.com/sanketsmali/ProxyAwareIOSCFnetwork/blob/master/TestingProxtAware/ViewController.cs
-HTTPRequest Service   : https://github.com/sanketsmali/ProxyAwareIOSCFnetwork/blob/master/TestingProxtAware/HttpService.cs
-Proxy Info Povider : https://github.com/sanketsmali/ProxyAwareIOSCFnetwork/blob/master/TestingProxtAware/ProxyInfoProvider.cs
+## Components 
+1. ViewController : https://github.com/sanketsmali/ProxyAwareIOSCFnetwork/blob/master/TestingProxtAware/ViewController.cs
+2. HTTPRequest Service   : https://github.com/sanketsmali/ProxyAwareIOSCFnetwork/blob/master/TestingProxtAware/HttpService.cs
+3. Proxy Info Povider : https://github.com/sanketsmali/ProxyAwareIOSCFnetwork/blob/master/TestingProxtAware/ProxyInfoProvider.cs
 
 
 ## Workflow
@@ -20,6 +19,7 @@ Enter the expected URL that needs to be checked in the app. Best example for get
 Click on  "Make proxy aware" button the app will detect the system proxy and print the response.
 The toggle button will change system proxy using the following code:
 
+```
 public WebProxy GetProxySettings()
     {
         var settings = CFNetwork.GetSystemProxySettings();
@@ -37,6 +37,8 @@ public WebProxy GetProxySettings()
             ? new WebProxy($"{proxyHost}:{proxyPort}")
             : null;
     }
+    
+ ```
 The proxy is being read from a PAC file and then formatted via regular expression 
 
 ## Example 
