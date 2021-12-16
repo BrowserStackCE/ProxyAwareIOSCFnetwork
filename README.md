@@ -15,9 +15,9 @@ https://docstore.mik.ua/orelly/networking_2ndEd/fire/ch09_02.htm
 
 
 ## Workflow
-Enter the expected URL that needs to be checked in the app. Best example for getting the IP details would be http://ip-api.com/json
-Click on  "Make proxy aware" button the app will detect the system proxy and print the response.
-The toggle button will change system proxy using the following code:
+* Enter the expected URL that needs to be checked in the app. Best example for getting the IP details would be http://ip-api.com/json
+* Click on  "Make proxy aware" button the app will detect the system proxy and print the response.
+* The toggle button will change system proxy using the following code:
 
 ```
 public WebProxy GetProxySettings()
